@@ -3,17 +3,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Library imports
 import React from 'react';
-import { createStore } from 'redux'
-//Components
 import NavBar from '../navbar/NavBar'
-import ShowUs from '../showUs/ShowUs'
-import Counter from '../body/redux-tuto/Counter'
+import InfoCard from '../body/card/InfoCard'
+import MainFooter from '../footer/MainFooter'
+import MainCarousel from '../body/carousel/MainCarousel'
+import { Container, Row, Col } from 'reactstrap';
+//import { createStore } from 'redux'
+//Components
+
+//import ShowUs from '../showUs/ShowUs'
+//<ShowUs></ShowUs>
+//import Counter from '../body/redux-tuto/Counter'
 
 //Reducers
-import RedCounter from '../../reducers/RedCounter'
+//import RedCounter from '../../reducers/RedCounter'
 
-const store = createStore(RedCounter);
-store.subscribe(Counter);
+//const store = createStore(RedCounter);
+//store.subscribe(Counter);
 
 const App = () => (
   <div>
@@ -21,13 +27,19 @@ const App = () => (
       <NavBar></NavBar>
     </header>
     <body>
-      <ShowUs></ShowUs>
-      <Counter
-        value={store.getState()}
-        onInc={() => store.dispatch({ type: 'INCREMENT' })}
-        onDec={() => store.dispatch({ type: 'DECREMENT' })}>
-      </Counter>
+    <MainCarousel></MainCarousel>        
+      <Container>
+        <br></br>       
+        <Row>
+          <Col><InfoCard></InfoCard></Col>
+          <Col><InfoCard></InfoCard></Col>          
+          <Col><InfoCard></InfoCard></Col> 
+        </Row>
+        </Container>
     </body>
+    <br></br>
+    <MainFooter></MainFooter>
+    
   </div>
 );
 

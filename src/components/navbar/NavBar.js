@@ -42,14 +42,23 @@ class NavBar extends React.Component {
                     <img src={logo} className="NavBar-logo" />
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
+                        <Nav className="ml-auto" navbar>                            
                             <NavItem>
-                                <NavLink href="">GitHub</NavLink>
+                                <NavLink href="">Who We Are</NavLink>
                             </NavItem>
-                            <NavItem className="nav-item-custom">
+                            <NavItem>
+                                <NavLink href="">What We Do</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="">Our Community</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="">Contact Us</NavLink>
+                            </NavItem>
+                            <NavItem>
                                 <Button outline color="info" size="sm">SIGN UP</Button>
                             </NavItem>
-                            <NavItem className="nav-item-custom">
+                            <NavItem>
                                 <Button outline color="success" size="sm" onClick={this.toggleModal}>LOG IN</Button>
                             </NavItem>
                         </Nav>

@@ -3,7 +3,7 @@ import { Jumbotron, Button } from 'reactstrap';
 
 const ShowUs = (props) => {
   return (
-    <div>
+    <div class="container">
       <Jumbotron>
         <h1 className="display-3">Planea, disfruta y ahorra !</h1>
         <p className="lead">Plenty es un app que te ayuda a identificar tus gastos, teniendo control de ellos.</p>
