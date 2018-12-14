@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   CardFooter,
   Container,
   Row,
-  Col
+  Col,
+
 } from 'reactstrap';
 
 import logo from '../navbar/logo.png';
 
 class MainFooter extends React.Component {
-  
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (<CardFooter>
@@ -20,7 +17,7 @@ class MainFooter extends React.Component {
         <Row>
           <Row>
             <Col class="col-md-2 wow fadeInUp" data-wow-delay="0.1s" >
-              <img src={logo} class="img-responsive" />
+              <img src={logo} alt="img of logo" class="img-responsive" />
               <ul class="foot__nav">
                 <h2>Who We Are</h2>
                 <li><a href="">Green Miners: At a Glance</a></li>
@@ -46,7 +43,7 @@ class MainFooter extends React.Component {
             <Col class="col-md-2 wow fadeInUp" data-wow-delay="0.1s" >
               <ul class="foot__nav">
                 <h2>Work with us</h2>
-                <li><a href="">Why Fura</a></li>
+                <li><a href="">Why Green Miners</a></li>
                 <li><a href="">Current Jobs</a></li>
               </ul>
               <ul class="foot__nav">
@@ -67,14 +64,13 @@ class MainFooter extends React.Component {
                 <li><a href="news">In the news</a></li>
               </ul>
               <ul class="right__social-footer">
-                <li><a href="" target="_blank"><i class="fa fa-instagram"
-                  aria-hidden="true"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="" target="_blank"><i class="fa fa-facebook"
-                  aria-hidden="true"></i></a></li>
+                ></i></a></li>
                 <li><a href="" target="_blank"><i class="fa fa-twitter"
-                  aria-hidden="true"></i></a></li>
+                ></i></a></li>
                 <li><a href="" target="_blank"><i class="fa fa-linkedin"
-                  aria-hidden="true"></i></a></li>
+                ></i></a></li>
               </ul>
             </Col>
             <Col class="col-md-12 wow fadeInUp for-mobile" data-wow-delay="0.1s" >
@@ -97,12 +93,12 @@ class MainFooter extends React.Component {
           </Row>
           <Col class="col-md-8 wow fadeInLeft" data-wow-delay="0.1s" >
             <p class="copy_right_p">© 2018 Green Miners INC. All rights reserved. Designed &amp; Developed by
-                <a href="https://www.codeandco.ae/" target="_blank"> Code &amp; Co</a></p>
+                <a href="" target="_blank"> Code &amp; Co</a></p>
           </Col>
           <Col>
             <div class="col-md-4 rel__div">
               <div class="abs__div">
-                <img src="img/footer-hill.png" class="img-responsive" />
+                <img src="img/footer-hill.png" alt="img of footer" class="img-responsive" />
               </div>
             </div>
           </Col>

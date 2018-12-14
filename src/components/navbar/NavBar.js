@@ -39,7 +39,7 @@ class NavBar extends React.Component {
             <div>
                 <ModalLogin show={this.state.isOpenLogin} onClose={this.toggleModal}></ModalLogin>
                 <Navbar color="light" light expand="md">
-                    <img src={logo} className="NavBar-logo" />
+                    <img src={logo} className="NavBar-logo" alt="img of logo" />
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>                            

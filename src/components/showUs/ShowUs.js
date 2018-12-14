@@ -5,12 +5,12 @@ const ShowUs = (props) => {
   return (
     <div class="container">
       <Jumbotron>
-        <h1 className="display-3">Planea, disfruta y ahorra !</h1>
-        <p className="lead">Plenty es un app que te ayuda a identificar tus gastos, teniendo control de ellos.</p>
+        <h1 className="display-3">Green Miners!</h1>
+        <p className="lead">Are you looking for the best emerald for your jewelry</p>
         <hr className="my-2" />
-        <p>Prueba la versión demo que te ayuda a estimar cual puede ser el ahorro diario que tendras.</p>
+        <p>Green miners is an app that can help selecting the best from Colombia mines</p>
         <p className="lead">
-          <Button color="primary">Conoce más</Button>
+          <Button color="primary">Who we are</Button>
         </p>
       </Jumbotron>
     </div>
